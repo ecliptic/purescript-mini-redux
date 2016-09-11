@@ -24,7 +24,7 @@ exports.typeToString = function (action) {
 
   const name = action.constructor.name
 
-  const values = Object.keys(action).map(prop => {
+  const values = Object.keys(action).map(function (prop) {
     if (prop.startsWith('value')) {
       const value = action[prop]
 
