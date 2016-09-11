@@ -11,6 +11,8 @@ An idiomatic PureScript mini-interface to [Redux](http://redux.js.org/).
 
 Because I want to work with Redux in an idiomatic way inspired by `purescript-redux-utils`, but in a more lightweight and less intrusive fashion. Store creation is still handled by your imperative code, but reducers and actions are defined in your PureScript modules, and thus they are strictly typed and purely functional.
 
+This approach is inspired by the "functional core, imperative shell" strategy made popular by the Destroy All Software talk, [Boundaries](https://www.destroyallsoftware.com/talks/boundaries).
+
 ## Usage
 
 Install with bower:
