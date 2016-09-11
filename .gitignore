@@ -36,7 +36,6 @@ bower_components
 # Build outut
 .pulp-cache
 output
-build
 
 # PureScript REPL
 /.psci*
