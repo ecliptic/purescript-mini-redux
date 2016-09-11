@@ -38,7 +38,7 @@ Define your child reducers in PureScript as well:
 ```purescript
 module MyApp.State.MyReducer
   ( Action(..)
-  , State(State)
+  , State
   , setMyValue
   , initialState
   , reducer
