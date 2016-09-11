@@ -1,0 +1,23 @@
+{
+  "name": "purescript-mini-redux",
+  "version": "1.0.0",
+  "description": "An idiomatic mini-interface to Redux for PureScript",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "output"
+  ],
+  "dependencies": {
+    "purescript-functions": "^1.0.0",
+    "purescript-maybe": "^1.0.0",
+    "purescript-nullable": "^1.0.1",
+    "purescript-react": "^1.1.0"
+  },
+  "devDependencies": {
+    "purescript-debug": "^1.0.0"
+  }
+}
