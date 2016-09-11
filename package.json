@@ -1,6 +1,6 @@
 {
   "name": "purescript-mini-redux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An idiomatic mini-interface to Redux for PureScript",
   "scripts": {
     "build": "npm run build:ps",
