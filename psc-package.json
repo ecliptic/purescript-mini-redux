@@ -1,0 +1,12 @@
+{
+    "name": "purescript-mini-redux",
+    "set": "psc-0.10.7",
+    "source": "https://github.com/purescript/package-sets.git",
+    "depends": [
+        "react",
+        "nullable",
+        "maybe",
+        "functions",
+        "prelude"
+    ]
+}

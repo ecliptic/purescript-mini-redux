@@ -13,7 +13,7 @@
   ],
   "dependencies": {
     "purescript-functions": "^2.0.0",
-    "purescript-maybe": "^2.0.1",
+    "purescript-maybe": "^2.1.1",
     "purescript-nullable": "^2.0.0",
     "purescript-react": "^2.0.0"
   },
