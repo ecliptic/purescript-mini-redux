@@ -1,6 +1,11 @@
 const ReactRedux = require('react-redux')
 const Redux = require('redux')
 
+exports.combineReducers = Redux.combineReducers
+exports.applyMiddleware = Redux.applyMiddleware
+exports.reduxCreateStore = React.createStore
+exports.provider = ReactRedux.Provider
+
 exports.applyReducer = function (reducer) {
   return function (action) {
     return function (state) {
@@ -8,10 +13,6 @@ exports.applyReducer = function (reducer) {
     }
   }
 }
-
-exports.combineReducers = Redux.combineReducers
-
-exports.provider = ReactRedux.Provider
 
 exports.connect = function (mapStateToProps) {
   return function (mapDispatchToProps) {
