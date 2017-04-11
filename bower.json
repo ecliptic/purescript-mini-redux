@@ -1,6 +1,5 @@
 {
   "name": "purescript-mini-redux",
-  "version": "2.0.1",
   "description": "An idiomatic mini-interface to Redux for PureScript",
   "moduleType": [
     "node"
