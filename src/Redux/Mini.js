@@ -2,9 +2,12 @@ const ReactRedux = require('react-redux')
 const Redux = require('redux')
 
 exports.combineReducers = Redux.combineReducers
-exports.applyMiddleware = Redux.applyMiddleware
 exports.reduxCreateStore = Redux.createStore
 exports.provider = ReactRedux.Provider
+
+exports.applyMiddleware = function (middlewares) {
+  Redux.applyMiddleware.apply(undefined, middlewares)
+}
 
 exports.applyReducer = function (reducer) {
   return function (action) {
