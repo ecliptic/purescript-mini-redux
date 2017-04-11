@@ -5,8 +5,7 @@
   "scripts": {
     "build": "npm run build:ps",
     "build:ps": "pulp build",
-    "build:json": "pulp build --include test --no-psa --json-errors",
-    "postinstall": "bower install"
+    "build:json": "pulp build --include test --no-psa --json-errors"
   },
   "repository": {
     "type": "git",
