@@ -3,7 +3,7 @@ const Redux = require('redux')
 
 exports.combineReducers = Redux.combineReducers
 exports.applyMiddleware = Redux.applyMiddleware
-exports.reduxCreateStore = React.createStore
+exports.reduxCreateStore = Redux.createStore
 exports.provider = ReactRedux.Provider
 
 exports.applyReducer = function (reducer) {
