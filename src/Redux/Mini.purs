@@ -53,10 +53,12 @@ type CreateStore eff action state enhancer =
     (Array enhancer)  -- ^ An array of store enhancers
     Store  -- ^ The resulting store
 
-type Middleware eff action = Store  -- ^ The current store instance
-  -> Dispatch action eff  -- ^ The dispatch function
-  -> Action action  -- ^ The action currently being dispatched
-  -> Eff (store :: STORE | eff) (Action action)  -- ^ The resulting effect
+type Middleware eff action =
+  Fn3  -- ^ An uncurried function
+    Store  -- ^ The current store instance
+    (Dispatch action eff)  -- ^ The dispatch function
+    (Action action)  -- ^ The action currently being dispatched
+    (Eff (store :: STORE | eff) (Action action))  -- ^ The resulting effect
 
 -- Interfaces
 -- ----------
