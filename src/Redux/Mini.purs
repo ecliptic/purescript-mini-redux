@@ -79,8 +79,8 @@ foreign import connect :: forall actions state ownerProps props.
   -> ReactClass ownerProps  -- ^ The resulting higher-order component
 
 -- | The original Redux createStore function
-foreign import reduxCreateStore :: forall eff action state enhancer.
-  CreateStore eff action state enhancer
+foreign import reduxCreateStore :: forall action state enhancer.
+  CreateStore action state enhancer
 
 foreign import applyMiddleware :: forall eff action enhancer.
   Array (Middleware eff action) -> enhancer
