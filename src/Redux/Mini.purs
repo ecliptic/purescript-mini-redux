@@ -19,14 +19,14 @@ module Redux.Mini
   ) where
 
 import Prelude
-import Control.Monad.Eff (Eff)
+import Control.Monad.Eff (kind Effect, Eff)
 import Data.Function.Uncurried (Fn2, Fn3, mkFn2, runFn3)
 import Data.Maybe (Maybe(Just))
 import Data.Nullable (toMaybe, Nullable)
 import React (ReactClass)
 
-foreign import data Store :: *
-foreign import data STORE :: !
+foreign import data Store :: Type
+foreign import data STORE :: Effect
 
 -- Types
 -- -----

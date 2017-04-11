@@ -11,12 +11,12 @@
     "output"
   ],
   "dependencies": {
-    "purescript-functions": "^2.0.0",
-    "purescript-maybe": "^2.1.1",
-    "purescript-nullable": "^2.0.0",
-    "purescript-react": "^2.0.0"
+    "purescript-functions": "^3.0.0",
+    "purescript-maybe": "^3.0.0",
+    "purescript-nullable": "^3.0.0",
+    "purescript-react": "^3.0.0"
   },
   "devDependencies": {
-    "purescript-debug": "^2.0.0"
+    "purescript-debug": "^3.0.0"
   }
 }
