@@ -46,7 +46,7 @@ type Reducer action state = action -> state -> state
 newtype ReduxReducer action state =
   ReduxReducer (Fn2 (Nullable state) (Action action) state)
 
-type CreateStore eff action state enhancer =
+type CreateStore action state enhancer =
   Fn3  -- ^ An uncurried function
     (ReduxReducer action state)  -- ^ The root reducer
     state  -- ^ The initial state
